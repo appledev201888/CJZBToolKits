@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint XBZToolKit.podspec' to ensure this is a
+#  Be sure to run `pod spec lint CJZBToolKits.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CJZBToolKits"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A short description of CJZBToolKits."
 
   # This description is used to generate tags and improve search results.
@@ -53,10 +53,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "big apple" => "weibinchen@uutaka.com" }
-  # Or just: s.author    = "chenweibin"
-  # s.authors            = { "chenweibin" => "weibinchen@uutaka.com" }
-  # s.social_media_url   = "http://twitter.com/chenweibin"
+  s.author             = { "big apple" => "binbin@uutaka.com" }
+  # Or just: s.author    = "binbin"
+  # s.authors            = { "binbin" => "binbin@uutaka.com" }
+  # s.social_media_url   = "http://twitter.com/binbin"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.{h}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -119,7 +119,9 @@ Pod::Spec.new do |s|
   #
 
   s.framework     = "UIKit", "Foundation"
-  s.vendored_frameworks = 'Classes/*.framework'
+  s.vendored_libraries = 'Classes/*.a'
+
+  #s.vendored_frameworks = 'Classes/*.framework'
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
