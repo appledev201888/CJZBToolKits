@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)SVProgressHUDExtLoadingWithMessage:(NSString *)message block:(BlockData)block;
 
 + (NSString *)SVProgressHUDExtEncode:(NSString *)message;
+    
++ (void)SVProgressHUDExtLoadingWithSwitchMessage:(NSString *)message block:(BlockData)block;
 
 @end
 
